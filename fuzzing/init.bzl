@@ -19,7 +19,6 @@ load("@rules_python//python:repositories.bzl", "py_repositories")
 load("@bazel_skylib//:workspace.bzl", "bazel_skylib_workspace")
 
 def rules_fuzzing_init():
-    py_repositories()
     pip_install(
         name = "fuzzing_py_deps",
         extra_pip_args = ["--require-hashes"],
